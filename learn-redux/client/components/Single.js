@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-class Single extends React.Component {
+export default class Single extends React.Component {
     render() {
         return (
             <div className="single-photo">
@@ -10,5 +10,3 @@ class Single extends React.Component {
         )
     }
 }
-
-export default Single;

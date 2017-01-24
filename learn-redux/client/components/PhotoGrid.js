@@ -8,7 +8,7 @@ export default class PhotoGrid extends React.Component {
         const { posts, comments } = this.props;
         return (
             <div className="photo-grid">
-                {posts.map((post, i) => <Photo key={i} i={i} post={post} comments={comments[post.code]}/>)}
+                {posts.map((post, i) => <Photo key={i} index={i} post={post} postComments={comments[post.code]} {...this.props}/>)}
             </div>
         );
     }
